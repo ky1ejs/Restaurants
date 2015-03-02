@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?> 
-<!-- <?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>  -->
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="michelin-restaurants.xsl"?> 
 
 
 <michelin-restaurants>
@@ -30,8 +30,8 @@
 
 			Our dictionary-thick steaks cooked over real charcoal have received plenty of ‘best steak in London’ plaudits, but we’re not resting on our laurels. We’d love your feedback so we can keep on improving. It will go straight to us and we’ll always respond as quickly as we can.
 
-			Will & Huw
-		</long-descripion>
+			Will &amp; Huw
+		</long-description>
 		<opening-times>
 			<monday>
 				<lunch>12:00 - 15:00</lunch>
@@ -86,9 +86,8 @@
 		</short-description>
 		<long-description>
 			Designed by famed designer Christian Liaigre, the space embodies the Hakkasan design ethos of the modern ethnic now found in Hakkasan restaurants around the world. Wooden screens and latticing made of dark English oak is the same material used for the 16-metre bar, and the Ling Ling dining area evokes traditional Chinoiserie decadence, punctuated by black and gold traditionally-drawn panels. An open-plan kitchen is visible from the restaurant, making the activity in the kitchen part of the restaurant’s theatre.
-		</long-descripion>
+		</long-description>
 		<opening-times>
-			<opening-times>
 			<monday>
 				<lunch>12:00 – 15:15</lunch>
 				<dinner>17:30pm – 21:15</dinner>
@@ -104,7 +103,7 @@
 			<thursday>
 				<lunch>12:00 – 15:15</lunch>
 				<dinner>17:30 – 00:15</dinner>
-			</thusday>
+			</thursday>
 			<friday>
 				<lunch>12:00 – 15:15</lunch>
 				<dinner>17:30 – 00:15</dinner>
@@ -124,7 +123,7 @@
 
 	<restaurant>
 		<id>3</id>
-		<name>Duck and Waffle</name>
+		<name>Duck &amp; Waffle</name>
 		<address>
 			<first-line>110 Bishopsgate</first-line>
 			<second-line></second-line>
@@ -141,13 +140,12 @@
 		</pictures>
 		<rating>1</rating>
 		<short-description>
-			Located atop a 40-storey skyscraper at 110 Bishopsgate in the city of London, Duck & Waffle made its debut in the restaurant scene in the summer of 2012.
+			Located atop a 40-storey skyscraper at 110 Bishopsgate in the city of London, Duck &amp; Waffle made its debut in the restaurant scene in the summer of 2012.
 		</short-description>
 		<long-description>
-			Located atop a 40-storey skyscraper at 110 Bishopsgate in the city of London, Duck & Waffle made its debut in the restaurant scene in the summer of 2012. Inspired by broad European and British influences and spirit, the restaurant’s vibrant atmosphere encourages a convivial experience for guests through its array of dishes designed for sampling and sharing. Duck & Waffle places emphasis on local, rustic, seasonal and sustainable British ingredients, manifested in daily inspirations created from the market’s freshest offerings. Keeping pace with a city that’s always on the move, Duck & Waffle welcomes guests 24/7, offering breakfast, brunch, lunch, dinner and late night menus.
-		</long-descripion>
+			Located atop a 40-storey skyscraper at 110 Bishopsgate in the city of London, Duck &amp; Waffle made its debut in the restaurant scene in the summer of 2012. Inspired by broad European and British influences and spirit, the restaurant’s vibrant atmosphere encourages a convivial experience for guests through its array of dishes designed for sampling and sharing. Duck and Waffle places emphasis on local, rustic, seasonal and sustainable British ingredients, manifested in daily inspirations created from the market’s freshest offerings. Keeping pace with a city that’s always on the move, Duck &amp; Waffle welcomes guests 24/7, offering breakfast, brunch, lunch, dinner and late night menus.
+		</long-description>
 		<opening-times>
-			<opening-times>
 			<monday>
 				<breakfast>6:00 – 11:00</breakfast>
 				<lunch>11:30 – 16:30</lunch>
@@ -211,9 +209,8 @@
 		</short-description>
 		<long-description>
 			A truly unique London venue, The Cinnamon Club boasts a number of stunning rooms. In addition to the main dining room there are two very contrasting bars and also two private dining rooms. All of these rooms are available to hire for your own exclusive event.
-		</long-descripion>
+		</long-description>
 		<opening-times>
-			<opening-times>
 			<monday>
 				<breakfast>7:30 - 9:30</breakfast>
 				<lunch>12:00 - 14:45</lunch>
@@ -274,9 +271,8 @@
 			The rooftop OXO Tower Restaurant, Brasserie and Bar has proved a dazzling success since opening in 1996. The formal restaurant, more relaxed brasserie and cocktail bar all boast stunning views across the Thames to Charing Cross and the City of London.
 
 			The interior features a unique ceiling with blue neon lights, creating a beautiful moonlit effect in the evenings. Leather-clad bars and slate tables add to the subtly luxurious feel. The OXO Tower Restaurant serves beautifully presented modern British dishes while the OXO Brasserie’s open plan kitchen produces intense flavours with global influences.
-		</long-descripion>
+		</long-description>
 		<opening-times>
-			<opening-times>
 			<monday>
 				<open>12:00 - 21:00</open>
 			</monday>
