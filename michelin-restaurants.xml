@@ -190,60 +190,63 @@
 
 	<restaurant>
 		<id>4</id>
-		<name>The Breakfast Club</name>
+		<name>The Cinnamon Club</name>
 		<address>
-			<first-line></first-line>
-			<second-line></second-line>
-			<town></town>
-			<city></city>
-			<post-code></post-code>
+			<first-line>The Old Westminster Library</first-line>
+			<second-line>30-32 Great Smith Street</second-line>
+			<town-city>London</town-city>
+			<post-code>SW1P 3BU</post-code>
 		</address>
-		<phone-number></phone-number>
+		<phone-number>020 7222 2555</phone-number>
 		<pictures>
-			<picture></picture>
+			<picture>cinnamonclub-01.jpg</picture>
+			<picture>cinnamonclub-02.jpg</picture>
+			<picture>cinnamonclub-03.jpg</picture>
+			<picture>cinnamonclub-04.jpg</picture>
+			<picture>cinnamonclub-05.jpg</picture>
 		</pictures>
 		<rating></rating>
-		<short-description></short-description>
-		<long-description></long-descripion>
+		<short-description>
+			A short walk from some of London's most famous and prominent landmarks, the Old Westminster Library was first opened to the public in 1893 and was carefully converted into The Cinnamon Club over a century later in 2001.
+		</short-description>
+		<long-description>
+			A truly unique London venue, The Cinnamon Club boasts a number of stunning rooms. In addition to the main dining room there are two very contrasting bars and also two private dining rooms. All of these rooms are available to hire for your own exclusive event.
+		</long-descripion>
 		<opening-times>
 			<opening-times>
 			<monday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<breakfast>7:30 - 9:30</breakfast>
+				<lunch>12:00 - 14:45</lunch>
+				<dinner>18:00 - 20:30</dinner>
 			</monday>
 			<tuesday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<breakfast>7:30 - 9:30</breakfast>
+				<lunch>12:00 - 14:45</lunch>
+				<dinner>18:00 - 20:30</dinner>
 			</tuesday>
 			<wednesday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<breakfast>7:30 - 9:30</breakfast>
+				<lunch>12:00 - 14:45</lunch>
+				<dinner>18:00 - 20:30</dinner>
 			</wednesday>
 			<thursday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<breakfast>7:30 - 9:30</breakfast>
+				<lunch>12:00 - 14:45</lunch>
+				<dinner>18:00 - 20:30</dinner>
 			</thursday>
 			<friday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<breakfast>7:30 - 9:30</breakfast>
+				<lunch>12:00 - 14:45</lunch>
+				<dinner>18:00 - 20:30</dinner>
 			</friday>
 			<saturday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<lunch>12:00 - 14:45</lunch>
+				<dinner>18:00 - 20:30</dinner>
 			</saturday>
 			<sunday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
 			</sunday>
 		</opening-times>
-		<cuisine></cuisine>
+		<cuisine>Indian</cuisine>
 	</restaurant>
 
 
