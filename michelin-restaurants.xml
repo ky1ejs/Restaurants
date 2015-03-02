@@ -23,7 +23,7 @@
 			<picture>/pictures/hawksemoor-04.jpg</picture>
 			<picture>/pictures/hawksemoor-05.jpg</picture>
 		</pictures>
-		<rating>5</rating>
+		<rating>3</rating>
 		<short-description>
 			We’ve travelled the world in search of the perfect steak, but have found that beef from well-loved native cattle breeds reared right here in Britain has more flavour than anything we’ve tried on our travels.
 		</short-description>
@@ -47,10 +47,10 @@
 				<lunch>12:00 - 15:00</lunch>
 				<dinner>17:00 – 20:30</dinner>
 			</wednesday>
-			<tursday>
+			<thursday>
 				<lunch>12:00 - 15:00</lunch>
 				<dinner>17:00 – 20:30</dinner>
-			</thusday>
+			</thursday>
 			<friday>
 				<lunch>12:00 - 15:00</lunch>
 				<dinner>17:00 – 21:00</dinner>
@@ -72,57 +72,56 @@
 		<name>Hakkasan</name>
 		<address>
 			<first-line></first-line>
-			<second-line></second-line>
+			<second-line>8 Hanway Place</second-line>
 			<town></town>
-			<city></city>
-			<post-code></post-code>
+			<city>London</city>
+			<post-code>W1T 1HD</post-code>
 		</address>
-		<phone-number></phone-number>
+		<phone-number>+44 (0)20 7927 7000</phone-number>
 		<pictures>
-			<picture></picture>
+			<picture>hakkasan-01.jpg</picture>
+			<picture>hakkasan-02.jpg</picture>
+			<picture>hakkasan-03.jpg</picture>
 		</pictures>
-		<rating></rating>
-		<short-description></short-description>
-		<long-description></long-descripion>
+		<rating>1</rating>
+		<short-description>
+			Hakkasan Hanway Place is the original restaurant of Hakkasan that opened in 2001 in London.
+		</short-description>
+		<long-description>
+			Designed by famed designer Christian Liaigre, the space embodies the Hakkasan design ethos of the modern ethnic now found in Hakkasan restaurants around the world. Wooden screens and latticing made of dark English oak is the same material used for the 16-metre bar, and the Ling Ling dining area evokes traditional Chinoiserie decadence, punctuated by black and gold traditionally-drawn panels. An open-plan kitchen is visible from the restaurant, making the activity in the kitchen part of the restaurant’s theatre.
+		</long-descripion>
 		<opening-times>
 			<opening-times>
 			<monday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<lunch>12:00 – 15:15</lunch>
+				<dinner>17:30pm – 21:15</dinner>
 			</monday>
 			<tuesday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<lunch>12:00 – 15:15</lunch>
+				<dinner>17:30pm – 21:15</dinner>
 			</tuesday>
 			<wednesday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<lunch>12:00 – 15:15</lunch>
+				<dinner>17:30pm – 21:15</dinner>
 			</wednesday>
-			<tursday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+			<thursday>
+				<lunch>12:00 – 15:15</lunch>
+				<dinner>17:30 – 00:15</dinner>
 			</thusday>
 			<friday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<lunch>12:00 – 15:15</lunch>
+				<dinner>17:30 – 00:15</dinner>
 			</friday>
 			<saturday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<lunch>12:00 – 16:15</lunch>
+				<dinner>17:30 – 00:15</dinner>
 			</saturday>
 			<sunday>
-				<breakfast></breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<lunch>12:00 – 16:45</lunch>
+				<dinner>17:30pm – 21:15</dinner>
 			</sunday>
 		</opening-times>
-		<cuisine></cuisine>
+		<cuisine>Chinese</cuisine>
 	</restaurant>
 
 
@@ -160,11 +159,11 @@
 				<lunch></lunch>
 				<dinner></dinner>
 			</wednesday>
-			<tursday>
+			<thursday>
 				<breakfast></breakfast>
 				<lunch></lunch>
 				<dinner></dinner>
-			</thusday>
+			</thursday>
 			<friday>
 				<breakfast></breakfast>
 				<lunch></lunch>
@@ -219,11 +218,11 @@
 				<lunch></lunch>
 				<dinner></dinner>
 			</wednesday>
-			<tursday>
+			<thursday>
 				<breakfast></breakfast>
 				<lunch></lunch>
 				<dinner></dinner>
-			</thusday>
+			</thursday>
 			<friday>
 				<breakfast></breakfast>
 				<lunch></lunch>
@@ -278,11 +277,11 @@
 				<lunch></lunch>
 				<dinner></dinner>
 			</wednesday>
-			<tursday>
+			<thursday>
 				<breakfast></breakfast>
 				<lunch></lunch>
 				<dinner></dinner>
-			</thusday>
+			</thursday>
 			<friday>
 				<breakfast></breakfast>
 				<lunch></lunch>
