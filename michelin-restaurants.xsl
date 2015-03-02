@@ -4,20 +4,35 @@
 <xsl:template match="/">
 
 <html> 
+
+<head>
+	<title>Restaurants</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"></link>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
 <body> 
-    <h2>Restaurants</h2>
-    <table border="1"> 
-        <tr bgcolor="#9acd32">
-            <th>Name</th> 
-            <th>Phone number</th> 
-        </tr>
-        <xsl:for-each select="michelin-restaurants/restaurant"> 
-			<tr> 
-			      <td> <xsl:value-of select="name"/> </td>
-			      <td> <xsl:value-of select="phone-number"/> </td>
-			</tr> 
-		</xsl:for-each>  
-    </table> 
+	<div data-role="page">
+
+		<div data-role="header">
+		</div>
+
+		<div role="main" class="ui-content">
+
+			<ul data-role="listview" data-inset="true">
+				<xsl:for-each select="michelin-restaurants/restaurant"> 
+					<li><xsl:value-of select="name"/></li>
+				</xsl:for-each> 
+			</ul>
+
+		</div>
+
+		<div data-role="footer">
+		</div>
+
+	</div>  
 </body> 
 </html> 
 
