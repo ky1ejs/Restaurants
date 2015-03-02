@@ -23,7 +23,14 @@
 
 			<ul data-role="listview" data-inset="true">
 				<xsl:for-each select="michelin-restaurants/restaurant"> 
-					<li><xsl:value-of select="name"/></li>
+					<li>
+						<xsl:value-of select="name"/>
+						<img>
+							<xsl:attribute name="src">
+								<xsl:value-of select="pictures/picture"/>
+							</xsl:attribute>
+						</img>
+					</li>
 				</xsl:for-each> 
 			</ul>
 
