@@ -14,12 +14,11 @@
 			<post-code>WC2H 9JG</post-code>
 		</address>
 		<phone-number>020 7420 9390</phone-number>
+		<picture-tile>pictures/hawksemoor-tile.jpg</picture-tile>
 		<pictures>
 			<picture>pictures/hawksemoor-01.jpg</picture>
 			<picture>pictures/hawksemoor-02.jpg</picture>
 			<picture>pictures/hawksemoor-03.jpg</picture>
-			<picture>pictures/hawksemoor-04.jpg</picture>
-			<picture>pictures/hawksemoor-05.jpg</picture>
 		</pictures>
 		<rating>3</rating>
 		<short-description>
@@ -75,6 +74,7 @@
 			<post-code>W1T 1HD</post-code>
 		</address>
 		<phone-number>+44 (0)20 7927 7000</phone-number>
+		<picture-tile>pictures/hakkasan-tile.jpg</picture-tile>
 		<pictures>
 			<picture>pictures/hakkasan-01.jpg</picture>
 			<picture>pictures/hakkasan-02.jpg</picture>
@@ -131,6 +131,7 @@
 			<post-code>EC2N 4AY</post-code>
 		</address>
 		<phone-number>+44 203 640 7310</phone-number>
+		<picture-tile>pictures/duckandwaffle-tile.jpg</picture-tile>
 		<pictures>
 			<picture>pictures/duckandwaffle-01.jpg</picture>
 			<picture>pictures/duckandwaffle-02.jpg</picture>
@@ -196,6 +197,7 @@
 			<post-code>SW1P 3BU</post-code>
 		</address>
 		<phone-number>020 7222 2555</phone-number>
+		<picture-tile>pictures/cinnamonclub-tile.jpg</picture-tile>
 		<pictures>
 			<picture>pictures/cinnamonclub-01.jpg</picture>
 			<picture>pictures/cinnamonclub-02.jpg</picture>
@@ -257,6 +259,7 @@
 			<post-code>SE1 9PH</post-code>
 		</address>
 		<phone-number>020 7803 3888</phone-number>
+		<picture-tile>pictures/oxo-tile.jpg</picture-tile>
 		<pictures>
 			<picture>pictures/oxo-01.jpg</picture>
 			<picture>pictures/oxo-02.jpg</picture>

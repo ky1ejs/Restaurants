@@ -27,7 +27,7 @@
 						<xsl:value-of select="name"/>
 						<img>
 							<xsl:attribute name="src">
-								<xsl:value-of select="pictures/picture"/>
+								<xsl:value-of select="picture-tile"/>
 							</xsl:attribute>
 						</img>
 					</li>
