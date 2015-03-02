@@ -1,0 +1,30 @@
+<michelin-restaurants>
+	<restaurants>
+		<name></name>
+		<address>
+			<first-line></first-line>
+			<second-line></second-line>
+			<town></town>
+			<city></city>
+			<post-code></post-code>
+		</address>
+		<phone-number></phone-number>
+		<pictures></pictures>
+		<rating></rating>
+		<short-description></short-description>
+		<long-description></long-descripion>
+		<pictures>
+			<picture></picture>
+		</pictures>
+		<opening-times>
+			<monday></monday>
+			<tuesday></tuesday>
+			<wednesday></wednesday>
+			<tursday></thusday>
+			<friday></friday>
+			<saturday></saturday>
+			<sunday></sunday>
+		</opening-times>
+		<cuisine></cuisine>
+	</restaurants>
+</michelin-restaurants>
