@@ -1,6 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!-- <?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>  -->
+
+
 <michelin-restaurants>
-	<restaurants>
-		<name></name>
+
+
+	<restaurant>
+		<id>1</id>
+		<name>Hawksemoor</name>
+		<address>
+			<first-line>11 Langley Street</first-line>
+			<second-line></second-line>
+			<town></town>
+			<city>London</city>
+			<post-code>WC2H 9JG</post-code>
+		</address>
+		<phone-number>020 7420 9390</phone-number>
+		<pictures>
+			<picture>/pictures/hawksemoor-01.jpg</picture>
+			<picture>/pictures/hawksemoor-02.jpg</picture>
+			<picture>/pictures/hawksemoor-03.jpg</picture>
+			<picture>/pictures/hawksemoor-04.jpg</picture>
+			<picture>/pictures/hawksemoor-05.jpg</picture>
+		</pictures>
+		<rating>5</rating>
+		<short-description>
+			We’ve travelled the world in search of the perfect steak, but have found that beef from well-loved native cattle breeds reared right here in Britain has more flavour than anything we’ve tried on our travels.
+		</short-description>
+		<long-description>
+			We’ve travelled the world in search of the perfect steak, but have found that beef from well-loved native cattle breeds reared right here in Britain has more flavour than anything we’ve tried on our travels.
+
+			Our dictionary-thick steaks cooked over real charcoal have received plenty of ‘best steak in London’ plaudits, but we’re not resting on our laurels. We’d love your feedback so we can keep on improving. It will go straight to us and we’ll always respond as quickly as we can.
+
+			Will & Huw
+		</long-descripion>
+		<opening-times>
+			<monday>
+				<lunch>12:00 - 15:00</lunch>
+				<dinner>17:00 – 20:30</dinner>
+			</monday>
+			<tuesday>
+				<lunch>12:00 - 15:00</lunch>
+				<dinner>17:00 – 20:30</dinner>
+			</tuesday>
+			<wednesday>
+				<lunch>12:00 - 15:00</lunch>
+				<dinner>17:00 – 20:30</dinner>
+			</wednesday>
+			<tursday>
+				<lunch>12:00 - 15:00</lunch>
+				<dinner>17:00 – 20:30</dinner>
+			</thusday>
+			<friday>
+				<lunch>12:00 - 15:00</lunch>
+				<dinner>17:00 – 21:00</dinner>
+			</friday>
+			<saturday>
+				<lunch>12:00 - 15:00</lunch>
+				<dinner>17:00 – 21:00</dinner>
+			</saturday>
+			<sunday>
+				<open>12:00 – 21:30</open>
+			</sunday>
+		</opening-times>
+		<cuisine>Steak</cuisine>
+	</restaurant>
+
+
+	<restaurant>
+		<id>2</id>
+		<name>Hakkasan</name>
 		<address>
 			<first-line></first-line>
 			<second-line></second-line>
@@ -9,22 +78,229 @@
 			<post-code></post-code>
 		</address>
 		<phone-number></phone-number>
-		<pictures></pictures>
-		<rating></rating>
-		<short-description></short-description>
-		<long-description></long-descripion>
 		<pictures>
 			<picture></picture>
 		</pictures>
+		<rating></rating>
+		<short-description></short-description>
+		<long-description></long-descripion>
 		<opening-times>
-			<monday></monday>
-			<tuesday></tuesday>
-			<wednesday></wednesday>
-			<tursday></thusday>
-			<friday></friday>
-			<saturday></saturday>
-			<sunday></sunday>
+			<opening-times>
+			<monday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</monday>
+			<tuesday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</tuesday>
+			<wednesday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</wednesday>
+			<tursday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</thusday>
+			<friday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</friday>
+			<saturday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</saturday>
+			<sunday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</sunday>
 		</opening-times>
 		<cuisine></cuisine>
-	</restaurants>
+	</restaurant>
+
+
+	<restaurant>
+		<id>3</id>
+		<name>Duck and Waffle</name>
+		<address>
+			<first-line></first-line>
+			<second-line></second-line>
+			<town></town>
+			<city></city>
+			<post-code></post-code>
+		</address>
+		<phone-number></phone-number>
+		<pictures>
+			<picture></picture>
+		</pictures>
+		<rating></rating>
+		<short-description></short-description>
+		<long-description></long-descripion>
+		<opening-times>
+			<opening-times>
+			<monday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</monday>
+			<tuesday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</tuesday>
+			<wednesday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</wednesday>
+			<tursday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</thusday>
+			<friday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</friday>
+			<saturday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</saturday>
+			<sunday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</sunday>
+		</opening-times>
+		<cuisine></cuisine>
+	</restaurant>
+
+
+	<restaurant>
+		<id>4</id>
+		<name>The Breakfast Club</name>
+		<address>
+			<first-line></first-line>
+			<second-line></second-line>
+			<town></town>
+			<city></city>
+			<post-code></post-code>
+		</address>
+		<phone-number></phone-number>
+		<pictures>
+			<picture></picture>
+		</pictures>
+		<rating></rating>
+		<short-description></short-description>
+		<long-description></long-descripion>
+		<opening-times>
+			<opening-times>
+			<monday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</monday>
+			<tuesday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</tuesday>
+			<wednesday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</wednesday>
+			<tursday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</thusday>
+			<friday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</friday>
+			<saturday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</saturday>
+			<sunday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</sunday>
+		</opening-times>
+		<cuisine></cuisine>
+	</restaurant>
+
+
+	<restaurant>
+		<id>5</id>
+		<name>OXO Tower</name>
+		<address>
+			<first-line></first-line>
+			<second-line></second-line>
+			<town></town>
+			<city></city>
+			<post-code></post-code>
+		</address>
+		<phone-number></phone-number>
+		<pictures>
+			<picture></picture>
+		</pictures>
+		<rating></rating>
+		<short-description></short-description>
+		<long-description></long-descripion>
+		<opening-times>
+			<opening-times>
+			<monday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</monday>
+			<tuesday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</tuesday>
+			<wednesday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</wednesday>
+			<tursday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</thusday>
+			<friday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</friday>
+			<saturday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</saturday>
+			<sunday>
+				<breakfast></breakfast>
+				<lunch></lunch>
+				<dinner></dinner>
+			</sunday>
+		</opening-times>
+		<cuisine></cuisine>
+	</restaurant>
+
+
 </michelin-restaurants>
