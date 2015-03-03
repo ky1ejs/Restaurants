@@ -18,7 +18,10 @@
 
 	<script>
 
+		var loaded = false;
+
 		function setupMap() {
+			loaded = true;
 			var options = {
 				center:new google.maps.LatLng(51.508742,-0.120850),
 				zoom:5,
@@ -28,14 +31,15 @@
 		}
 
 		function loadScript() {
-		  var script = document.createElement('script');
-		  script.type = 'text/javascript';
-		  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
-		      '&amp;signed_in=true&amp;callback=setupMap';
-		  document.body.appendChild(script);
+			if (!loaded) {
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' + '&amp;signed_in=true&amp;callback=setupMap';
+				document.body.appendChild(script);
+			}
 		}
 
-		window.onload = loadScript;
+		$(document).on("pageshow", "#map-page", loadScript);
 
 	</script>
 </head>
