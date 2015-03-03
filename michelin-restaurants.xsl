@@ -22,7 +22,7 @@
 
 		<div role="main" class="ui-content">
 
-			<ul data-role="listview" data-inset="true" data-filter="true">
+			<ul data-role="listview" data-filter="true">
 				<xsl:for-each select="michelin-restaurants/restaurant"> 
 					<li>
 						<a data-transition="slide">
@@ -43,7 +43,14 @@
 
 		</div>
 
-		<div data-role="footer">
+		<div data-role="footer" data-id="thefooter" data-position="fixed">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a href="#" data-icon="grid">Summary</a></li>
+					<li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+					<li><a href="#" data-icon="gear">Setup</a></li>
+				</ul>
+			</div>
 		</div>
 
 	</div>
@@ -60,9 +67,6 @@
 
 			<div role="main" class="ui-content">
 				<xsl:value-of select="long-description" />
-			</div>
-
-			<div data-role="footer">
 			</div>
 
 		</div>
