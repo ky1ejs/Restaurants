@@ -1,0 +1,13 @@
+#map .ui-content {
+	padding: 0;
+	position: absolute;
+	top: 42.38px;
+	right: 0;
+	bottom: 56px;
+	left: 0;
+}
+
+#googleMap {
+	height: 100%;
+	width: 100%;
+}

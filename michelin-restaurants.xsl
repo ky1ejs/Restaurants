@@ -7,10 +7,27 @@
 
 <head>
 	<title>Restaurants</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+
+	<link rel="stylesheet" href="style.css" />
+
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"></link>
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(51.508742,-0.120850),
+		    zoom:5,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 </head>
 
 <body> 
@@ -46,8 +63,8 @@
 		<div data-role="footer" data-id="thefooter" data-position="fixed">
 			<div data-role="navbar" data-iconpos="bottom">
 				<ul>
-					<li><a href="#" data-icon="grid">Summary</a></li>
-					<li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+					<li><a href="#home" data-icon="grid" class="ui-btn-active">Restaurants</a></li>
+					<li><a href="#map" data-icon="star" >Map</a></li>
 					<li><a href="#" data-icon="gear">Setup</a></li>
 				</ul>
 			</div>
@@ -71,6 +88,28 @@
 
 		</div>
 	</xsl:for-each>
+
+	<div data-role="page" id="map" data-fullscreen="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Map</h1>
+		</div>
+
+		<div role="main" class="ui-content" data-fullscreen="true">
+			<div id="googleMap"></div>
+		</div>
+
+		<div data-role="footer" data-id="thefooter" data-position="fixed">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a href="#home" data-icon="grid" class="ui-btn-active">Restaurants</a></li>
+					<li><a href="#map" data-icon="star" >Map</a></li>
+					<li><a href="#" data-icon="gear">Setup</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
 
 </body> 
 </html> 
