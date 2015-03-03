@@ -6,7 +6,7 @@
 
 
 	<restaurant>
-		<id>1</id>
+		<id>0001</id>
 		<name>Hawksemoor</name>
 		<address>
 			<first-line>11 Langley Street</first-line>
@@ -65,7 +65,7 @@
 
 
 	<restaurant>
-		<id>2</id>
+		<id>0002</id>
 		<name>Hakkasan</name>
 		<address>
 			<first-line>8 Hanway Place</first-line>
@@ -122,7 +122,7 @@
 
 
 	<restaurant>
-		<id>3</id>
+		<id>0003</id>
 		<name>Duck &amp; Waffle</name>
 		<address>
 			<first-line>110 Bishopsgate</first-line>
@@ -188,7 +188,7 @@
 
 
 	<restaurant>
-		<id>4</id>
+		<id>0004</id>
 		<name>The Cinnamon Club</name>
 		<address>
 			<first-line>The Old Westminster Library</first-line>
@@ -250,7 +250,7 @@
 
 
 	<restaurant>
-		<id>5</id>
+		<id>0005</id>
 		<name>OXO Tower</name>
 		<address>
 			<first-line>8th floor, Oxo Tower Wharf</first-line>
