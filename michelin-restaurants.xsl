@@ -79,7 +79,6 @@
 				<ul>
 					<li><a href="#home" data-icon="grid" class="ui-btn-active ui-state-persist">Restaurants</a></li>
 					<li><a href="#map-page" data-icon="star">Map</a></li>
-					<li><a href="#" data-icon="gear">Setup</a></li>
 				</ul>
 			</div>
 		</div>
@@ -118,7 +117,6 @@
 				<ul>
 					<li><a href="#home" data-icon="grid">Restaurants</a></li>
 					<li><a href="#map-page" data-icon="star" class="ui-btn-active ui-state-persist">Map</a></li>
-					<li><a href="#" data-icon="gear">Setup</a></li>
 				</ul>
 			</div>
 		</div>
