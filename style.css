@@ -1,4 +1,4 @@
-#map .ui-content {
+#map-page .ui-content {
 	padding: 0;
 	position: absolute;
 	top: 42.38px;
@@ -7,7 +7,7 @@
 	left: 0;
 }
 
-#googleMap {
+#map {
 	height: 100%;
 	width: 100%;
 }

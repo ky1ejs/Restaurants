@@ -16,27 +16,27 @@
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
-		function initialize() {
-		  var mapProp = {
-		    center:new google.maps.LatLng(51.508742,-0.120850),
-		    zoom:5,
-		    mapTypeId:google.maps.MapTypeId.ROADMAP
-		  };
-		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+		function setupMap() {
+			var options = {
+				center:new google.maps.LatLng(51.508742,-0.120850),
+				zoom:5,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+		    var map = new google.maps.Map(document.getElementById('map'), options);
 		}
-		google.maps.event.addDomListener(window, 'load', initialize);
 
 		function loadScript() {
-		  var script = document.createElement("script");
-		  script.src = "http://maps.googleapis.com/maps/api/js?callback=initialize";
+		  var script = document.createElement('script');
+		  script.type = 'text/javascript';
+		  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
+		      '&amp;signed_in=true&amp;callback=setupMap';
 		  document.body.appendChild(script);
 		}
 
 		window.onload = loadScript;
 
-		google.maps.event.trigger(map, 'resize');
 	</script>
 </head>
 
@@ -70,11 +70,11 @@
 
 		</div>
 
-		<div data-role="footer" class="the-navbar" data-id="thefooter" data-position="fixed">
+		<div data-role="footer" data-id="thefooter" data-position="fixed">
 			<div data-role="navbar" data-iconpos="bottom">
 				<ul>
 					<li><a href="#home" data-icon="grid" class="ui-btn-active ui-state-persist">Restaurants</a></li>
-					<li><a href="#map" data-icon="star">Map</a></li>
+					<li><a href="#map-page" data-icon="star">Map</a></li>
 					<li><a href="#" data-icon="gear">Setup</a></li>
 				</ul>
 			</div>
@@ -99,21 +99,21 @@
 		</div>
 	</xsl:for-each>
 
-	<div data-role="page" id="map" onload="initialize()">
+	<div data-role="page" id="map-page" onload="initialize()">
 
 		<div data-role="header" data-position="fixed">
 			<h1>Map</h1>
 		</div>
 
 		<div role="main" class="ui-content" data-fullscreen="true">
-			<div id="googleMap"></div>
+			<div id="map"></div>
 		</div>
 
 		<div data-role="footer" data-id="thefooter" data-position="fixed">
 			<div data-role="navbar" data-iconpos="bottom">
 				<ul>
 					<li><a href="#home" data-icon="grid">Restaurants</a></li>
-					<li><a href="#map" data-icon="star" class="ui-btn-active ui-state-persist">Map</a></li>
+					<li><a href="#map-page" data-icon="star" class="ui-btn-active ui-state-persist">Map</a></li>
 					<li><a href="#" data-icon="gear">Setup</a></li>
 				</ul>
 			</div>
