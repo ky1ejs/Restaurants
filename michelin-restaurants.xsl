@@ -27,6 +27,16 @@
 		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 		}
 		google.maps.event.addDomListener(window, 'load', initialize);
+
+		function loadScript() {
+		  var script = document.createElement("script");
+		  script.src = "http://maps.googleapis.com/maps/api/js?callback=initialize";
+		  document.body.appendChild(script);
+		}
+
+		window.onload = loadScript;
+
+		google.maps.event.trigger(map, 'resize');
 	</script>
 </head>
 
@@ -60,11 +70,11 @@
 
 		</div>
 
-		<div data-role="footer" data-id="thefooter" data-position="fixed">
+		<div data-role="footer" class="the-navbar" data-id="thefooter" data-position="fixed">
 			<div data-role="navbar" data-iconpos="bottom">
 				<ul>
-					<li><a href="#home" data-icon="grid" class="ui-btn-active">Restaurants</a></li>
-					<li><a href="#map" data-icon="star" >Map</a></li>
+					<li><a href="#home" data-icon="grid" class="ui-btn-active ui-state-persist">Restaurants</a></li>
+					<li><a href="#map" data-icon="star">Map</a></li>
 					<li><a href="#" data-icon="gear">Setup</a></li>
 				</ul>
 			</div>
@@ -89,7 +99,7 @@
 		</div>
 	</xsl:for-each>
 
-	<div data-role="page" id="map" data-fullscreen="true">
+	<div data-role="page" id="map" onload="initialize()">
 
 		<div data-role="header" data-position="fixed">
 			<h1>Map</h1>
@@ -102,8 +112,8 @@
 		<div data-role="footer" data-id="thefooter" data-position="fixed">
 			<div data-role="navbar" data-iconpos="bottom">
 				<ul>
-					<li><a href="#home" data-icon="grid" class="ui-btn-active">Restaurants</a></li>
-					<li><a href="#map" data-icon="star" >Map</a></li>
+					<li><a href="#home" data-icon="grid">Restaurants</a></li>
+					<li><a href="#map" data-icon="star" class="ui-btn-active ui-state-persist">Map</a></li>
 					<li><a href="#" data-icon="gear">Setup</a></li>
 				</ul>
 			</div>
