@@ -12,12 +12,14 @@
 
 	<link rel="stylesheet" href="style.css" />
 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"></link>
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"></link>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 	<script>
 
+
+		<!-- Map page -->
 		var loaded = false;
 
 		function setupMap() {
@@ -74,11 +76,11 @@
 
 		</div>
 
-		<div data-role="footer" data-id="thefooter" data-position="fixed">
+		<div data-role="footer" data-id="f1" data-position="fixed" data-theme="a">
 			<div data-role="navbar" data-iconpos="bottom">
 				<ul>
 					<li><a href="#home" data-icon="grid" class="ui-btn-active ui-state-persist">Restaurants</a></li>
-					<li><a href="#map-page" data-icon="star">Map</a></li>
+					<li><a href="#map-page" data-transition="fade" data-icon="star">Map</a></li>
 				</ul>
 			</div>
 		</div>
@@ -112,10 +114,10 @@
 			<div id="map"></div>
 		</div>
 
-		<div data-role="footer" data-id="thefooter" data-position="fixed">
+		<div data-role="footer" data-id="f1" data-position="fixed" data-theme="a">
 			<div data-role="navbar" data-iconpos="bottom">
 				<ul>
-					<li><a href="#home" data-icon="grid">Restaurants</a></li>
+					<li><a href="#home" data-transition="fade" data-icon="grid">Restaurants</a></li>
 					<li><a href="#map-page" data-icon="star" class="ui-btn-active ui-state-persist">Map</a></li>
 				</ul>
 			</div>
