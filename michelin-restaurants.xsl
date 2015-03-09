@@ -21,11 +21,32 @@
 
 		$(document).on("pageshow", "#map-page", function(event) {
 			var options = {
-				center:new google.maps.LatLng(51.508742,-0.120850),
-				zoom:5,
+				center: new google.maps.LatLng(51.508742,-0.120850),
+				zoom: 13,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
 			var map = new google.maps.Map($(event.target).find('#map').get(0), options);
+
+			<xsl:for-each select="michelin-restaurants/restaurant">
+				var restLocation = new google.maps.LatLng(
+					<xsl:value-of select="location/longitude"/>,
+					<xsl:value-of select="location/latitude"/>
+				);
+
+				var marker = new google.maps.Marker({
+				    position: restLocation,
+				    map: map,
+				    clickable: true,
+				});
+
+				var info = new google.maps.InfoWindow({
+			       content: "<xsl:value-of select="name"/>"
+			    });
+
+			    info.open(map, marker);
+
+			    google.maps.event.addListener(marker, "click", function (e) { info.open(map, marker); });
+			</xsl:for-each>
 		});
 
 		<!-- Maps for each page -->
@@ -48,17 +69,16 @@
 				var marker = new google.maps.Marker({
 				    position: latLng,
 				    map: map,
-				    title: "Hello World!",
 				    clickable: true,
 				});
 
 				var info = new google.maps.InfoWindow({
 			       content: "<xsl:value-of select="name"/>"
-			     });
+			    });
 
-			     info.open(map, marker);
+			    info.open(map, marker);
 
-			     google.maps.event.addListener(marker, "click", function (e) { info.open(map, marker); });
+			    google.maps.event.addListener(marker, "click", function (e) { info.open(map, marker); });
 
 			});
 		</xsl:for-each>
