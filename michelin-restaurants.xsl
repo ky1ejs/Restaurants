@@ -19,7 +19,7 @@
 
 	<script type="text/javascript">
 
-		$(document).on("pageshow", ".map-page-container", function(event) {
+		$(document).on("pageshow", "#map-page", function(event) {
 			var options = {
 				center:new google.maps.LatLng(51.508742,-0.120850),
 				zoom:5,
@@ -27,6 +27,41 @@
 			};
 			var map = new google.maps.Map($(event.target).find('#map').get(0), options);
 		});
+
+		<!-- Maps for each page -->
+		<xsl:for-each select="michelin-restaurants/restaurant">
+
+			$(document).on("pageshow", "#" + "<xsl:value-of select="id"/>", function(event) {
+				var latLng = new google.maps.LatLng(
+					<xsl:value-of select="location/longitude"/>,
+					<xsl:value-of select="location/latitude"/>
+				);
+
+				var options = {
+					center: latLng,
+					zoom: 15,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+
+				var map = new google.maps.Map($(event.target).find('#map').get(0), options);
+
+				var marker = new google.maps.Marker({
+				    position: latLng,
+				    map: map,
+				    title: "Hello World!",
+				    clickable: true,
+				});
+
+				var info = new google.maps.InfoWindow({
+			       content: "<xsl:value-of select="name"/>"
+			     });
+
+			     info.open(map, marker);
+
+			     google.maps.event.addListener(marker, "click", function (e) { info.open(map, marker); });
+
+			});
+		</xsl:for-each>
 
 	</script>
 </head>
