@@ -45,7 +45,11 @@
 
 			    info.open(map, marker);
 
-			    google.maps.event.addListener(marker, "click", function (e) { info.open(map, marker); });
+			    google.maps.event.addListener(marker, "click", function(e) {
+					$.mobile.changePage("#" + "<xsl:value-of select="id"/>", {
+						transition: "slide"
+					});
+			    });
 			</xsl:for-each>
 		});
 
