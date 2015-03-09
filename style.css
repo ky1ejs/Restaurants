@@ -2,6 +2,10 @@
 	margin: 20px 30px;
 }
 
+.rest-description {
+	text-align: center;
+}
+
 #map-page .ui-content {
 	padding: 0;
 	position: absolute;

@@ -119,7 +119,9 @@
 
 			<div role="main" class="ui-content">
 				<div class="wrapper">
-					<xsl:value-of select="long-description" />
+					<div class="rest-description">
+						<xsl:value-of select="long-description" />
+					</div>
 					<div class="map-container">
 						<div id="map"></div>
 					</div>
