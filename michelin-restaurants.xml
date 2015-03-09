@@ -61,6 +61,10 @@
 			</sunday>
 		</opening-times>
 		<cuisine>Steak</cuisine>
+		<location>
+			<longitude>51.5133834</longitude>
+			<latitude>-0.1282871</latitude>
+		</location>
 	</restaurant>
 
 
@@ -118,6 +122,10 @@
 			</sunday>
 		</opening-times>
 		<cuisine>Chinese</cuisine>
+		<location>
+			<longitude>51.5172548</longitude>
+			<latitude>-0.1334343</latitude>
+		</location>
 	</restaurant>
 
 
@@ -184,6 +192,10 @@
 			</sunday>
 		</opening-times>
 		<cuisine>British</cuisine>
+		<location>
+			<longitude>51.516131</longitude>
+			<latitude>-0.080892</latitude>
+		</location>
 	</restaurant>
 
 
@@ -246,6 +258,10 @@
 			</sunday>
 		</opening-times>
 		<cuisine>Indian</cuisine>
+		<location>
+			<longitude>51.497378</longitude>
+			<latitude>-0.129631</latitude>
+		</location>
 	</restaurant>
 
 
@@ -299,6 +315,10 @@
 			</sunday>
 		</opening-times>
 		<cuisine>Modern</cuisine>
+		<location>
+			<longitude>51.5083465</longitude>
+			<latitude>-0.10837</latitude>
+		</location>
 	</restaurant>
 
 
