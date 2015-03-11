@@ -22,6 +22,16 @@
 		var mainMap;
 		var mainMapMarkers = new Array();
 
+		function fitMarkersOnMainMap() {
+			var bounds = new google.maps.LatLngBounds();
+
+			mainMapMarkers.forEach(function(entry) {
+				bounds.extend(entry.getPosition());
+			});
+
+			mainMap.fitBounds(bounds);
+		}
+
 		$(document).on("pageshow", "#map-page", function(event) {
 			var options = {
 				center: new google.maps.LatLng(51.508742,-0.120850),
@@ -57,6 +67,8 @@
 					});
 			    });
 			</xsl:for-each>
+
+			fitMarkersOnMainMap();
 		});
 
 		function findUsersLocation() {
@@ -84,14 +96,7 @@
 					info.open(mainMap, marker);
 			    });
 
-				var bounds = new google.maps.LatLngBounds();
-
-				mainMapMarkers.forEach(function(entry) {
-					bounds.extend(entry.getPosition());
-					<!-- entry.close(); -->
-				});
-
-				mainMap.fitBounds(bounds);
+				fitMarkersOnMainMap();
 
 			});
 		}
