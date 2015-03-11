@@ -19,13 +19,17 @@
 
 	<script type="text/javascript">
 
+		var mainMap;
+		var mainMapMarkers = new Array();
+
 		$(document).on("pageshow", "#map-page", function(event) {
 			var options = {
 				center: new google.maps.LatLng(51.508742,-0.120850),
 				zoom: 13,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
-			var map = new google.maps.Map($(event.target).find('#map').get(0), options);
+
+			mainMap = new google.maps.Map($(event.target).find('#map').get(0), options);
 
 			<xsl:for-each select="michelin-restaurants/restaurant">
 				var restLocation = new google.maps.LatLng(
@@ -35,15 +39,17 @@
 
 				var marker = new google.maps.Marker({
 				    position: restLocation,
-				    map: map,
+				    map: mainMap,
 				    clickable: true,
 				});
+
+				mainMapMarkers.push(marker);
 
 				var info = new google.maps.InfoWindow({
 			       content: "<xsl:value-of select="name"/>"
 			    });
 
-			    info.open(map, marker);
+			    info.open(mainMap, marker);
 
 			    google.maps.event.addListener(marker, "click", function(e) {
 					$.mobile.changePage("#" + "<xsl:value-of select="id"/>", {
@@ -52,6 +58,43 @@
 			    });
 			</xsl:for-each>
 		});
+
+		function findUsersLocation() {
+			navigator.geolocation.getCurrentPosition(function(position) {
+				<!-- handle no geoLocation available -->
+				userLocation = new google.maps.LatLng(
+					position.coords.latitude,
+					position.coords.longitude
+				);
+
+				var marker = new google.maps.Marker({
+				    position: userLocation,
+				    map: mainMap,
+				});
+
+				mainMapMarkers.push(marker);
+
+				var info = new google.maps.InfoWindow({
+			       content: "<b>YOU ARE HERE</b>"
+			    });
+
+				info.open(mainMap, marker);
+
+			    google.maps.event.addListener(marker, "click", function(e) {
+					info.open(mainMap, marker);
+			    });
+
+				var bounds = new google.maps.LatLngBounds();
+
+				mainMapMarkers.forEach(function(entry) {
+					bounds.extend(entry.getPosition());
+					<!-- entry.close(); -->
+				});
+
+				mainMap.fitBounds(bounds);
+
+			});
+		}
 
 		<!-- Maps for each page -->
 		<xsl:for-each select="michelin-restaurants/restaurant">
@@ -158,7 +201,7 @@
 	<div data-role="page" class="map-page-container" id="map-page">
 		<div data-role="header" data-position="fixed">
 			<h1>Map</h1>
-			<a href="index.html" data-icon="gear" class="ui-btn-right">Current locations</a>
+			<a href="#" onclick="findUsersLocation()" data-icon="gear" class="ui-btn-right">Current location</a>
 		</div>
 
 		<div role="main" class="ui-content">
