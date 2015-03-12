@@ -198,28 +198,41 @@
 					<div class="map-container">
 						<div id="map"></div>
 					</div>
-					<div class="opening-times">
-						<ul>
-							<li>
+					<div class="rest-details">
+						<div class="rest-opening-times">
+							<ul>
 								<xsl:for-each select="opening-times/*">
-									<xsl:value-of select="name()" />
-									<ul>
-										<xsl:if test="breakfast">
-											<li>Breakfast: <xsl:value-of select="breakfast" /></li>
-										</xsl:if>
-										<xsl:if test="lunch">
-											<li>Lunch: <xsl:value-of select="lunch" /></li>
-										</xsl:if>
-										<xsl:if test="dinner">
-											<li>Dinner: <xsl:value-of select="dinner" /></li>
-										</xsl:if>
-										<xsl:if test="open">
-											<li><xsl:value-of select="open" /></li>
-										</xsl:if>
-									</ul>
+									<li>
+										<xsl:value-of select="name()" />
+										<ul>
+											<xsl:if test="breakfast">
+												<li>
+													<strong>Breakfast: </strong>
+													<xsl:value-of select="breakfast" />
+												</li>
+											</xsl:if>
+											<xsl:if test="lunch">
+												<li>
+													<strong>Lunch: </strong>
+													<xsl:value-of select="lunch" />
+												</li>
+											</xsl:if>
+											<xsl:if test="dinner">
+												<li>
+													<strong>Dinner: </strong>
+													<xsl:value-of select="dinner" />
+												</li>
+											</xsl:if>
+											<xsl:if test="open">
+												<li><xsl:value-of select="open" /></li>
+											</xsl:if>
+										</ul>
+									</li>
 								</xsl:for-each>
-							</li>
-						</ul>
+							</ul>
+						</div>
+						<div class="rest-contact">
+						</div>
 					</div>
 				</div>
 			</div>
