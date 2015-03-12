@@ -192,7 +192,131 @@
 			<div role="main" class="ui-content">
 				<div class="wrapper">
 					<div class="rest-description">
+						<h4>Description</h4>
 						<xsl:value-of select="long-description" />
+					</div>
+					<div class="opening-times">
+						<ul>
+							<li>
+								Monday
+								<ul>
+									<xsl:if test="opening-times/monday/breakfast">
+										<li><xsl:value-of select="opening-times/monday/breakfast" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/monday/lunch">
+										<li><xsl:value-of select="opening-times/monday/lunch" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/monday/dinner">
+										<li><xsl:value-of select="opening-times/monday/dinner" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/monday/open">
+										<li><xsl:value-of select="opening-times/monday/open" /></li>
+									</xsl:if>
+								</ul>
+							</li>
+							<li>
+								Tuesday
+								<ul>
+									<xsl:if test="opening-times/tuesday/breakfast">
+										<li><xsl:value-of select="opening-times/tuesday/breakfast" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/tuesday/lunch">
+										<li><xsl:value-of select="opening-times/tuesday/lunch" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/tuesday/dinner">
+										<li><xsl:value-of select="opening-times/tuesday/dinner" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/tuesday/open">
+										<li><xsl:value-of select="opening-times/tuesday/open" /></li>
+									</xsl:if>
+								</ul>
+							</li>
+							<li>
+								Wednesday
+								<ul>
+									<xsl:if test="opening-times/wednesday/breakfast">
+										<li><xsl:value-of select="opening-times/wednesday/breakfast" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/wednesday/lunch">
+										<li><xsl:value-of select="opening-times/wednesday/lunch" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/wednesday/dinner">
+										<li><xsl:value-of select="opening-times/wednesday/dinner" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/wednesday/open">
+										<li><xsl:value-of select="opening-times/wednesday/open" /></li>
+									</xsl:if>
+								</ul>
+							</li>
+							<li>
+								Thursday
+								<ul>
+									<xsl:if test="opening-times/thursday/breakfast">
+										<li><xsl:value-of select="opening-times/thursday/breakfast" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/thursday/lunch">
+										<li><xsl:value-of select="opening-times/thursday/lunch" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/thursday/dinner">
+										<li><xsl:value-of select="opening-times/thursday/dinner" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/thursday/open">
+										<li><xsl:value-of select="opening-times/thursday/open" /></li>
+									</xsl:if>
+								</ul>
+							</li>
+							<li>
+								Friday
+								<ul>
+									<xsl:if test="opening-times/friday/breakfast">
+										<li><xsl:value-of select="opening-times/friday/breakfast" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/friday/lunch">
+										<li><xsl:value-of select="opening-times/friday/lunch" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/friday/dinner">
+										<li><xsl:value-of select="opening-times/friday/dinner" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/friday/open">
+										<li><xsl:value-of select="opening-times/friday/open" /></li>
+									</xsl:if>
+								</ul>
+							</li>
+							<li>
+								Saturday
+								<ul>
+									<xsl:if test="opening-times/saturday/breakfast">
+										<li><xsl:value-of select="opening-times/saturday/breakfast" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/saturday/lunch">
+										<li><xsl:value-of select="opening-times/saturday/lunch" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/saturday/dinner">
+										<li><xsl:value-of select="opening-times/saturday/dinner" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/saturday/open">
+										<li><xsl:value-of select="opening-times/saturday/open" /></li>
+									</xsl:if>
+								</ul>
+							</li>
+							<li>
+								Sunday
+								<ul>
+									<xsl:if test="opening-times/sunday/breakfast">
+										<li><xsl:value-of select="opening-times/sunday/breakfast" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/sunday/lunch">
+										<li><xsl:value-of select="opening-times/sunday/lunch" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/sunday/dinner">
+										<li><xsl:value-of select="opening-times/sunday/dinner" /></li>
+									</xsl:if>
+									<xsl:if test="opening-times/sunday/open">
+										<li><xsl:value-of select="opening-times/sunday/open" /></li>
+									</xsl:if>
+								</ul>
+							</li>
+						</ul>
 					</div>
 					<div class="map-container">
 						<div id="map"></div>
