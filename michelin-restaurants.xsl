@@ -193,7 +193,7 @@
 				<div class="wrapper">
 					<div class="rest-description">
 						<h4>Description</h4>
-						<xsl:value-of select="long-description" />
+						<xsl:copy-of select="long-description" />
 					</div>
 					<div class="map-container">
 						<div id="map"></div>
