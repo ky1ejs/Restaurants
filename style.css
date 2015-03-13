@@ -17,6 +17,27 @@
 	margin: 0px;
 }
 
+.rest-details {
+	display: table;
+	width: 100%;
+}
+
+.rest-contact ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.rest-details > .rest-opening-times, .rest-details > .rest-contact {
+	float: left;
+	width: calc(50% - (20px * 2));
+	padding: 0 20px;
+}
+
+.rest-details > .rest-opening-times {
+	text-align: right;
+}
+
 #map-page .ui-content {
 	padding: 0;
 	position: absolute;
