@@ -3,7 +3,7 @@
 
 }
 
-.wrapper div:not(:last-child) {
+.wrapper > div:not(:last-child) {
 	margin-bottom: 45px;
 }
 
