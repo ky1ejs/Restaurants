@@ -1,5 +1,7 @@
 # Retaurants
 
+Using XML and XSLT to generate this jQuery site is probably the last way that I would have like to do this. It's made it very hard to write the Javascript for each restaurant page. But hey...that's what the courseowork spec asks for.. 💩
+
 ## Tough issues faced
 I'll add descriptions and links to these tough issues soon
 
