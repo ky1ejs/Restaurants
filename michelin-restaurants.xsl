@@ -31,6 +31,45 @@
 			mainMap.fitBounds(bounds);
 		}
 
+		var userLocation;
+
+		function findUsersLocation(callback) {
+			navigator.geolocation.getCurrentPosition(function(position) {
+				<!-- TODO: handle no geoLocation available -->
+				userLocation = new google.maps.LatLng(
+					position.coords.latitude,
+					position.coords.longitude
+				);
+
+				if (callback != null) {
+					callback();
+				}
+			});
+		}
+
+		function addUsersLocationToMainMap() {
+			findUsersLocation(function() {
+				var marker = new google.maps.Marker({
+				    position: userLocation,
+				    map: mainMap,
+				});
+
+				mainMapMarkers.push(marker);
+
+				var info = new google.maps.InfoWindow({
+			       content: "<b>YOU ARE HERE</b>"
+			    });
+
+				info.open(mainMap, marker);
+
+			    google.maps.event.addListener(marker, "click", function(e) {
+					info.open(mainMap, marker);
+			    });
+
+				fitMarkersOnMainMap();
+			})
+		}
+
 		$(document).on("pageshow", "#map-page", function(event) {
 			setTimeout(function() { 
 				var options = {
@@ -72,35 +111,8 @@
 			}, 5);
 		});
 
-		function findUsersLocation() {
-			navigator.geolocation.getCurrentPosition(function(position) {
-				<!-- TODO: handle no geoLocation available -->
-				userLocation = new google.maps.LatLng(
-					position.coords.latitude,
-					position.coords.longitude
-				);
-
-				var marker = new google.maps.Marker({
-				    position: userLocation,
-				    map: mainMap,
-				});
-
-				mainMapMarkers.push(marker);
-
-				var info = new google.maps.InfoWindow({
-			       content: "<b>YOU ARE HERE</b>"
-			    });
-
-				info.open(mainMap, marker);
-
-			    google.maps.event.addListener(marker, "click", function(e) {
-					info.open(mainMap, marker);
-			    });
-
-				fitMarkersOnMainMap();
-
-			});
-		}
+		var displayedMap;
+		var currentLocation;
 
 		<!-- Maps for each page -->
 		<xsl:for-each select="michelin-restaurants/restaurant">
@@ -112,6 +124,8 @@
 						<xsl:value-of select="location/latitude"/>
 					);
 
+					currentLocation = latLng;
+
 					var options = {
 						center: latLng,
 						zoom: 15,
@@ -119,6 +133,7 @@
 					};
 
 					var map = new google.maps.Map($(event.target).find('#map').get(0), options);
+					displayedMap = map;
 
 					var marker = new google.maps.Marker({
 					    position: latLng,
@@ -137,6 +152,45 @@
 				}, 5);
 			});
 		</xsl:for-each>
+
+		function calcRoute() {
+			findUsersLocation(function() {
+
+				var marker = new google.maps.Marker({
+				    position: userLocation,
+				    map: displayedMap,
+				});
+
+				var info = new google.maps.InfoWindow({
+					content: "<b>YOU ARE HERE</b>"
+				});
+
+				info.open(displayedMap, marker);
+
+				google.maps.event.addListener(marker, "click", function(e) {
+					info.open(displayedMap, marker);
+				});
+
+				var bounds = new google.maps.LatLngBounds();
+				bounds.extend(userLocation);
+				bounds.extend(currentLocation);
+				displayedMap.fitBounds(bounds);
+
+				var directionsService = new google.maps.DirectionsService();
+				var directionsDisplay = new google.maps.DirectionsRenderer();
+				directionsDisplay.setMap(displayedMap);
+				var request = {
+					origin: userLocation,
+					destination: currentLocation,
+					travelMode: google.maps.TravelMode.DRIVING
+				};
+				directionsService.route(request, function(response, status) {
+					if (status == google.maps.DirectionsStatus.OK) {
+						directionsDisplay.setDirections(response);
+					}
+				});
+			});
+		}
 
 	</script>
 </head>
@@ -248,6 +302,7 @@
 						</div>
 					</div>
 					<div class="map-container">
+						<a href="#" data-role="button" data-inline="true" onclick="calcRoute()">Directions</a>
 						<div id="map"></div>
 					</div>
 				</div>
@@ -259,7 +314,7 @@
 	<div data-role="page" id="map-page">
 		<div data-role="header" data-position="fixed">
 			<h1>Map</h1>
-			<a href="#" onclick="findUsersLocation()" data-icon="gear" class="ui-btn-right">Current location</a>
+			<a href="#" onclick="addUsersLocationToMainMap()" data-icon="gear" class="ui-btn-right">Current location</a>
 		</div>
 
 		<div role="main" class="ui-content">
