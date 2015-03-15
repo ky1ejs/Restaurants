@@ -272,7 +272,7 @@
 							<ul>
 								<xsl:for-each select="opening-times/*">
 									<li>
-										<xsl:value-of select="name()" />
+										<h4><xsl:value-of select="name()" /></h4>
 										<ul>
 											<xsl:if test="breakfast">
 												<li>

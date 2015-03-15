@@ -11,10 +11,31 @@
 	text-align: center;
 }
 
-.rest-opening-times > ul {
+.rest-opening-times ul {
+	font-size: 10pt;
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
+}
+
+.rest-opening-times h4 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.rest-opening-times > ul {
+	display: table;
+}
+
+.rest-opening-times > ul > li {
+	float: left;
+	display: table-cell;
+	width: 130px;
+	padding-bottom: 13px;
+}
+
+.rest-opening-times > ul > li ul {
+	font-size: 8pt;
 }
 
 .rest-details {
