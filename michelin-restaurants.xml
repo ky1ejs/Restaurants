@@ -96,15 +96,15 @@
 		<opening-times>
 			<Monday>
 				<lunch>12:00 – 15:15</lunch>
-				<dinner>17:30pm – 21:15</dinner>
+				<dinner>17:30 – 21:15</dinner>
 			</Monday>
 			<Tuesday>
 				<lunch>12:00 – 15:15</lunch>
-				<dinner>17:30pm – 21:15</dinner>
+				<dinner>17:30 – 21:15</dinner>
 			</Tuesday>
 			<Wednesday>
 				<lunch>12:00 – 15:15</lunch>
-				<dinner>17:30pm – 21:15</dinner>
+				<dinner>17:30 – 21:15</dinner>
 			</Wednesday>
 			<Thursday>
 				<lunch>12:00 – 15:15</lunch>
@@ -120,7 +120,7 @@
 			</Saturday>
 			<Sunday>
 				<lunch>12:00 – 16:45</lunch>
-				<dinner>17:30pm – 21:15</dinner>
+				<dinner>17:30 – 21:15</dinner>
 			</Sunday>
 		</opening-times>
 		<cuisine>Chinese</cuisine>
@@ -184,13 +184,13 @@
 			</Friday>
 			<Saturday>
 				<breakfast>6:00 – 9:00</breakfast>
-				<lunch></lunch>
-				<dinner></dinner>
+				<lunch>11:30 – 16:30</lunch>
+				<dinner>17:30 – 5:00</dinner>
 			</Saturday>
 			<Sunday>
 				<breakfast>6:00 – 9:00</breakfast>
 				<brunch>9:00 – 16:00</brunch>
-				<dinner>17:00pm – 5:00</dinner>
+				<dinner>17:00 – 5:00</dinner>
 			</Sunday>
 		</opening-times>
 		<cuisine>British</cuisine>
@@ -256,8 +256,6 @@
 				<lunch>12:00 - 14:45</lunch>
 				<dinner>18:00 - 20:30</dinner>
 			</Saturday>
-			<Sunday>
-			</Sunday>
 		</opening-times>
 		<cuisine>Indian</cuisine>
 		<location>
