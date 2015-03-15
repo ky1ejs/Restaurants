@@ -199,6 +199,18 @@
 						<xsl:copy-of select="long-description" />
 					</div>
 					<div class="rest-details">
+						<div class="rest-contact">
+							Address
+							<br />
+							<br />
+							<ul>
+								<xsl:for-each select="address/*">
+									<li>
+										<xsl:value-of select="current()" />
+									</li>
+								</xsl:for-each>
+							</ul>
+						</div>
 						<div class="rest-opening-times">
 							Opening times
 							<br />
@@ -230,18 +242,6 @@
 												<li><xsl:value-of select="open" /></li>
 											</xsl:if>
 										</ul>
-									</li>
-								</xsl:for-each>
-							</ul>
-						</div>
-						<div class="rest-contact">
-							Address
-							<br />
-							<br />
-							<ul>
-								<xsl:for-each select="address/*">
-									<li>
-										<xsl:value-of select="current()" />
 									</li>
 								</xsl:for-each>
 							</ul>
