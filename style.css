@@ -19,7 +19,6 @@
 .rest-detail-col {
 	float: left;
 	width: calc(50% - (20px * 2));
-	padding: 0 20px;
 }
 
 .rest-detail-col div p:first-of-type {
@@ -33,6 +32,14 @@
 .rest-detail-col h4 {
 	margin-top: 0;
 	margin-bottom: 10px;
+}
+
+.rest-detail-col-1 {
+	padding-right: 20px;
+}
+
+.rest-detail-col-2 {
+	padding-left: 20px;
 }
 
 .rest-contact ul {
