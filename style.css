@@ -1,5 +1,5 @@
 .wrapper {
-	margin: 20px 30px;
+	margin: 20px 25px;
 
 }
 
@@ -7,8 +7,42 @@
 	margin-bottom: 45px;
 }
 
-.rest-description {
-	text-align: center;
+.rest-details {
+	display: table;
+	width: 100%;
+}
+
+.rest-detail-col {
+	float: left;
+	width: calc(50% - (20px * 2));
+	padding: 0 20px;
+}
+
+@media screen and (max-width: 550px) {
+	.rest-detail-col {
+		/*float: left;*/
+		width: 100%;
+		/*padding: 0 20px;*/
+	}
+}
+
+.rest-detail-col div {
+	margin-bottom: 30px;
+}
+
+.rest-detail-col div p:first-of-type {
+	margin-top: 0;
+}
+
+.rest-detail-col h4 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.rest-contact ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 .rest-opening-times ul {
@@ -16,11 +50,6 @@
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
-}
-
-.rest-opening-times h4 {
-	margin-top: 0;
-	margin-bottom: 5px;
 }
 
 .rest-opening-times > ul {
@@ -36,27 +65,6 @@
 
 .rest-opening-times > ul > li ul {
 	font-size: 8pt;
-}
-
-.rest-details {
-	display: table;
-	width: 100%;
-}
-
-.rest-contact ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-.rest-details > .rest-opening-times, .rest-details > .rest-contact {
-	float: left;
-	width: calc(50% - (20px * 2));
-	padding: 0 20px;
-}
-
-.rest-details > .rest-contact {
-	text-align: right;
 }
 
 #map-page .ui-content {

@@ -248,57 +248,57 @@
 
 			<div role="main" class="ui-content">
 				<div class="wrapper">
-					<div class="rest-description">
-						<h4>Description</h4>
-						<xsl:copy-of select="long-description" />
-					</div>
 					<div class="rest-details">
-						<div class="rest-contact">
-							Address
-							<br />
-							<br />
-							<ul>
-								<xsl:for-each select="address/*">
-									<li>
-										<xsl:value-of select="current()" />
-									</li>
-								</xsl:for-each>
-							</ul>
+						<div class="rest-detail-col rest-detail-col-1">
+							<div class="rest-description">
+								<h4>Description</h4>
+								<xsl:copy-of select="long-description/*" />
+							</div>
 						</div>
-						<div class="rest-opening-times">
-							Opening times
-							<br />
-							<br />
-							<ul>
-								<xsl:for-each select="opening-times/*">
-									<li>
-										<h4><xsl:value-of select="name()" /></h4>
-										<ul>
-											<xsl:if test="breakfast">
-												<li>
-													<strong>Breakfast: </strong>
-													<xsl:value-of select="breakfast" />
-												</li>
-											</xsl:if>
-											<xsl:if test="lunch">
-												<li>
-													<strong>Lunch: </strong>
-													<xsl:value-of select="lunch" />
-												</li>
-											</xsl:if>
-											<xsl:if test="dinner">
-												<li>
-													<strong>Dinner: </strong>
-													<xsl:value-of select="dinner" />
-												</li>
-											</xsl:if>
-											<xsl:if test="open">
-												<li><xsl:value-of select="open" /></li>
-											</xsl:if>
-										</ul>
-									</li>
-								</xsl:for-each>
-							</ul>
+						<div class="rest-detail-col rest-detail-col-2">
+							<div class="rest-contact">
+								<h4>Address</h4>
+									<ul>
+										<xsl:for-each select="address/*">
+											<li>
+												<xsl:value-of select="current()" />
+											</li>
+										</xsl:for-each>
+									</ul>
+							</div>
+							<div class="rest-opening-times">
+								<h4>Opening times</h4>
+								<ul>
+									<xsl:for-each select="opening-times/*">
+										<li>
+											<h4><xsl:value-of select="name()" /></h4>
+											<ul>
+												<xsl:if test="breakfast">
+													<li>
+														<strong>Breakfast: </strong>
+														<xsl:value-of select="breakfast" />
+													</li>
+												</xsl:if>
+												<xsl:if test="lunch">
+													<li>
+														<strong>Lunch: </strong>
+														<xsl:value-of select="lunch" />
+													</li>
+												</xsl:if>
+												<xsl:if test="dinner">
+													<li>
+														<strong>Dinner: </strong>
+														<xsl:value-of select="dinner" />
+													</li>
+												</xsl:if>
+												<xsl:if test="open">
+													<li><xsl:value-of select="open" /></li>
+												</xsl:if>
+											</ul>
+										</li>
+									</xsl:for-each>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="map-container">
