@@ -331,6 +331,7 @@
 								<xsl:attribute name="id">
 									<xsl:value-of select="current()"/>
 								</xsl:attribute>
+								<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 								<img>
 									<xsl:attribute name="src">
 										<xsl:value-of select="current()"/>
