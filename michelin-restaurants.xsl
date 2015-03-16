@@ -338,6 +338,7 @@
 								</img>
 							</div>
 						</xsl:for-each>
+						<p>Click to enlarge</p>
 					</div>
 				</div>
 			</div>

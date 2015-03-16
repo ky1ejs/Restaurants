@@ -91,10 +91,13 @@
 }
 
 .photos {
+	display: table;
 	text-align: center;
 }
 
 .photos img {
+	display: table-cell;
+	vertical-align: middle;
 	border-radius: calc(25% / 4);
 	display: inline-block;
 	margin: 10px;
