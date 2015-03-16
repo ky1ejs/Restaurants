@@ -192,6 +192,15 @@
 			});
 		}
 
+		$( document ).on( "pageinit", function() {
+		    $( ".photo-popup" ).on({
+		        popupbeforeposition: function() {
+		            var maxHeight = $( window ).height() - 60 + "px";
+		            $( ".photo-popup img" ).css( "max-height", maxHeight );
+		        }
+		    });
+		});
+
 	</script>
 </head>
 
@@ -307,11 +316,27 @@
 					</div>
 					<div class="photos">
 						<xsl:for-each select="pictures/picture">
-							<img>
-								<xsl:attribute name="src">
+							<a data-rel="popup" data-position-to="window">
+								<xsl:attribute name="href">
+									#<xsl:value-of select="current()"/>
+								</xsl:attribute>
+								<img>
+									<xsl:attribute name="src">
+										<xsl:value-of select="current()"/>
+									</xsl:attribute>
+								</img>
+							</a>
+
+							<div data-role="popup" class="photo-popup">
+								<xsl:attribute name="id">
 									<xsl:value-of select="current()"/>
 								</xsl:attribute>
-							</img>
+								<img>
+									<xsl:attribute name="src">
+										<xsl:value-of select="current()"/>
+									</xsl:attribute>
+								</img>
+							</div>
 						</xsl:for-each>
 					</div>
 				</div>
