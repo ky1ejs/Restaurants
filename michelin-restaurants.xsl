@@ -305,6 +305,15 @@
 						<a href="#" data-role="button" data-inline="true" onclick="calcRoute()">Directions</a>
 						<div id="map"></div>
 					</div>
+					<div class="photos">
+						<xsl:for-each select="pictures/picture">
+							<img>
+								<xsl:attribute name="src">
+									<xsl:value-of select="current()"/>
+								</xsl:attribute>
+							</img>
+						</xsl:for-each>
+					</div>
 				</div>
 			</div>
 
