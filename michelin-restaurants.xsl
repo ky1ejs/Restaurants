@@ -112,6 +112,7 @@
 		});
 
 		var displayedMap;
+		var directionsPanel;
 		var currentLocation;
 
 		<!-- Maps for each page -->
@@ -134,6 +135,8 @@
 
 					var map = new google.maps.Map($(event.target).find('#map').get(0), options);
 					displayedMap = map;
+					directionsPanel = $(event.target).find('.map-container').find('#directionsPanel').get(0);
+
 
 					var marker = new google.maps.Marker({
 					    position: latLng,
@@ -179,6 +182,7 @@
 				var directionsService = new google.maps.DirectionsService();
 				var directionsDisplay = new google.maps.DirectionsRenderer();
 				directionsDisplay.setMap(displayedMap);
+				<!-- directionsDisplay.setPanel(directionsPanel); -->
 				var request = {
 					origin: userLocation,
 					destination: currentLocation,
