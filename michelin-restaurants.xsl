@@ -216,9 +216,53 @@
 		</div>
 
 		<div role="main" class="ui-content">
+			<a href="#home-sort" data-role="button" data-inline="true">Sort by Cuisine</a>
+			<ul data-role="listview" data-filter="true">
+				<xsl:for-each select="michelin-restaurants/restaurant"> 
+					<li>
+						<a data-transition="slide">
+							<xsl:attribute name="href">
+								#<xsl:value-of select="id"/>
+							</xsl:attribute>
+							<img>
+								<xsl:attribute name="src">
+									<xsl:value-of select="picture-tile"/>
+								</xsl:attribute>
+							</img>
+							<h3><xsl:value-of select="name"/></h3>
+							<p><xsl:value-of select="short-description"/></p>
+						</a>
+					</li>
+				</xsl:for-each> 
+			</ul>
+
+		</div>
+
+		<div data-role="footer" data-id="f1" data-position="fixed" data-theme="a">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a href="#home" data-icon="grid" class="ui-btn-active ui-state-persist">Restaurants</a></li>
+					<li><a href="#map-page" data-transition="fade" data-icon="star">Map</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="home-sort">
+
+		<div data-role="header">
+			<h1>Restaurants</h1>
+		</div>
+
+		<div role="main" class="ui-content">
 
 			<ul data-role="listview" data-filter="true">
 				<xsl:for-each select="michelin-restaurants/restaurant"> 
+					<xsl:sort select="cuisine"/>
+					<li data-role="list-divider" role="heading">
+						<xsl:value-of select="cuisine"/>
+					</li>
 					<li>
 						<a data-transition="slide">
 							<xsl:attribute name="href">
